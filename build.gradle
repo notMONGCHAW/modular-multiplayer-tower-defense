@@ -1,0 +1,32 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.13'
+}
+
+group = 'com.modulartd'
+version = '1.0'
+
+sourceCompatibility = '21'
+targetCompatibility = '21'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // FXGL from Maven Central
+    implementation 'com.github.almasb:fxgl:21.1'
+
+    // JavaFX modules
+    implementation "org.openjfx:javafx-controls:21.0.1"
+    implementation "org.openjfx:javafx-fxml:21.0.1"
+}
+
+javafx {
+    version = "21.0.1"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+application {
+    mainClass = 'com.modulartd.app.MainApp'
+}
