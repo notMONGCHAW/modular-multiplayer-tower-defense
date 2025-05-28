@@ -4,29 +4,34 @@ plugins {
 }
 
 group = 'com.modulartd'
-version = '1.0'
-
-sourceCompatibility = '21'
-targetCompatibility = '21'
+version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
 }
 
-dependencies {
-    // FXGL from Maven Central
-    implementation 'com.github.almasb:fxgl:21.1'
-
-    // JavaFX modules
-    implementation "org.openjfx:javafx-controls:21.0.1"
-    implementation "org.openjfx:javafx-fxml:21.0.1"
+ext {
+    javafxVersion = '21.0.2'
+    fxglVersion = '21.1'
 }
 
-javafx {
-    version = "21.0.1"
-    modules = [ 'javafx.controls', 'javafx.fxml' ]
+dependencies {
+    // FXGL Game Engine
+    implementation "com.github.almasb:fxgl:$fxglVersion"
+
+    // JavaFX modules
+    implementation "org.openjfx:javafx-base:$javafxVersion"
+    implementation "org.openjfx:javafx-controls:$javafxVersion"
+    implementation "org.openjfx:javafx-graphics:$javafxVersion"
+    implementation "org.openjfx:javafx-fxml:$javafxVersion"
+    implementation "org.openjfx:javafx-media:$javafxVersion"
 }
 
 application {
     mainClass = 'com.modulartd.app.MainApp'
+}
+
+javafx {
+    version = javafxVersion
+    modules = [ 'javafx.controls', 'javafx.fxml', 'javafx.media' ]
 }
