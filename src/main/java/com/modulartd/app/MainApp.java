@@ -8,7 +8,7 @@ public class MainApp extends GameApplication {
     @Override
     protected void initSettings(GameSettings settings) {
         settings.setTitle("Modular Tower Defense");
-        settings.setVersion("1.0");
+        settings.setVersion("0.0.1");
         settings.setWidth(1280);
         settings.setHeight(720);
         settings.setMainMenuEnabled(false);
