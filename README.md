@@ -1,5 +1,10 @@
 # Modular Multiplayer Tower Defense Game Using JavaFX and FXGL
 
+![Badge](https://badgen.net/github/commits/notMONGCHAW/modular-multiplayer-tower-defense) ![GitHub last commit](https://img.shields.io/github/last-commit/notmongchaw/modular-multiplayer-tower-defense) ![GitHub repo size](https://img.shields.io/github/repo-size/notmongchaw/modular-multiplayer-tower-defense) ![github/license](https://badgen.net/github/license/notmongchaw/modular-multiplayer-tower-defense) ![github/license](https://badgen.net/badge/icon/java?icon=java&label) 
+
+![UIU-Student](https://img.shields.io/badge/United%20International%20University-Student-orange.svg)
+
+
 This is a modular multiplayer tower defense game developed as part of the *Advanced Object-Oriented Programming* course. The game leverages modern Java technologies to implement real-time gameplay, cooperative networking, and scalable game systems.
 
 ## Overview
@@ -8,7 +13,7 @@ Players collaborate (or compete) to defend against waves of enemies by placing a
 
 ## Technologies Used
 
-* Java 17
+* Java 21
 * JavaFX with Scene Builder (FXML-based UI)
 * FXGL Game Development Framework
 * Java Sockets (LAN multiplayer)
@@ -66,10 +71,10 @@ This project is developed by a team of four students with varying levels of Java
 
 ### Prerequisites
 
-* Java 17 SDK
+* Java 21 SDK
 * IntelliJ IDEA or Eclipse (recommended: IntelliJ)
 * JavaFX SDK
-* FXGL dependency (handled via Maven or Gradle)
+* FXGL dependency (handled via Gradle)
 
 ### Quick Setup
 
@@ -77,7 +82,7 @@ This project is developed by a team of four students with varying levels of Java
 2. Clone your fork locally:
    `git clone https://github.com/your-username/modular-multiplayer-tower-defense.git`
 3. Open the project in IntelliJ or Eclipse.
-4. Configure JavaFX and FXGL (see `/docs/setup.md`).
+4. Build the App using Gradle
 5. Run the main class in `com.modulartd.app.MainApp`.
 
 ## Contributing
@@ -104,4 +109,4 @@ If you use or extend this project in your own work, please provide clear attribu
 
 ## Academic Context
 
-This project is developed as part of a university-level software engineering course. It is intended to demonstrate applied knowledge in object-oriented programming, multithreading, networking, and game development in Java.
+This project is developed as part of a university-level software engineering course for United International University. It is intended to demonstrate applied knowledge in object-oriented programming, multithreading, networking, and game development in Java.
