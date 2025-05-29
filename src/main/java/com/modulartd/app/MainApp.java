@@ -7,12 +7,16 @@ public class MainApp extends GameApplication {
 
     @Override
     protected void initSettings(GameSettings settings) {
-        settings.setTitle("Modular Tower Defense");
-        settings.setVersion("0.0.1");
-        settings.setWidth(1280);
-        settings.setHeight(720);
-        settings.setMainMenuEnabled(false);
-        settings.setGameMenuEnabled(false);
+        settings.setWidth(800);
+        settings.setHeight(600);
+        settings.setTitle("MMTD");
+        settings.setVersion("0.1");
+        settings.setMainMenuEnabled(true);  // Enable default main menu
+    }
+
+    @Override
+    protected void initGame() {
+        // Initialize your game here, but it won't start until player clicks start in menu
     }
 
     public static void main(String[] args) {
