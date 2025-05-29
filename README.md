@@ -1,6 +1,6 @@
 # Modular Multiplayer Tower Defense Game Using JavaFX and FXGL
 
-![Badge](https://badgen.net/github/commits/notMONGCHAW/modular-multiplayer-tower-defense) | ![GitHub last commit](https://img.shields.io/github/last-commit/notmongchaw/modular-multiplayer-tower-defense) | ![GitHub repo size](https://img.shields.io/github/repo-size/notmongchaw/modular-multiplayer-tower-defense) | ![github/license](https://badgen.net/github/license/notmongchaw/modular-multiplayer-tower-defense) | ![github/license](https://badgen.net/badge/icon/java?icon=java&label) 
+![Badge](https://badgen.net/github/commits/notMONGCHAW/modular-multiplayer-tower-defense) ![GitHub last commit](https://img.shields.io/github/last-commit/notmongchaw/modular-multiplayer-tower-defense) ![GitHub repo size](https://img.shields.io/github/repo-size/notmongchaw/modular-multiplayer-tower-defense) ![github/license](https://badgen.net/github/license/notmongchaw/modular-multiplayer-tower-defense) ![github/license](https://badgen.net/badge/icon/java?icon=java&label) 
 
 ![UIU-Student](https://img.shields.io/badge/United%20International%20University-Student-orange.svg)
 
