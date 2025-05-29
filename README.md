@@ -109,4 +109,4 @@ If you use or extend this project in your own work, please provide clear attribu
 
 ## Academic Context
 
-This project is developed as part of a university-level software engineering course. It is intended to demonstrate applied knowledge in object-oriented programming, multithreading, networking, and game development in Java.
+This project is developed as part of a university-level software engineering course for United International University. It is intended to demonstrate applied knowledge in object-oriented programming, multithreading, networking, and game development in Java.
