@@ -71,10 +71,10 @@ This project is developed by a team of four students with varying levels of Java
 
 ### Prerequisites
 
-* Java 17 SDK
+* Java 21 SDK
 * IntelliJ IDEA or Eclipse (recommended: IntelliJ)
 * JavaFX SDK
-* FXGL dependency (handled via Maven or Gradle)
+* FXGL dependency (handled via Gradle)
 
 ### Quick Setup
 
@@ -82,7 +82,7 @@ This project is developed by a team of four students with varying levels of Java
 2. Clone your fork locally:
    `git clone https://github.com/your-username/modular-multiplayer-tower-defense.git`
 3. Open the project in IntelliJ or Eclipse.
-4. Configure JavaFX and FXGL (see `/docs/setup.md`).
+4. Build the App using Gradle
 5. Run the main class in `com.modulartd.app.MainApp`.
 
 ## Contributing
