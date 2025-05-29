@@ -1,5 +1,10 @@
 # Modular Multiplayer Tower Defense Game Using JavaFX and FXGL
 
+![Badge](https://badgen.net/github/commits/notMONGCHAW/modular-multiplayer-tower-defense) | ![GitHub last commit](https://img.shields.io/github/last-commit/notmongchaw/modular-multiplayer-tower-defense) | ![GitHub repo size](https://img.shields.io/github/repo-size/notmongchaw/modular-multiplayer-tower-defense) | ![github/license](https://badgen.net/github/license/notmongchaw/modular-multiplayer-tower-defense) | ![github/license](https://badgen.net/badge/icon/java?icon=java&label) 
+
+![UIU-Student](https://img.shields.io/badge/United%20International%20University-Student-orange.svg)
+
+
 This is a modular multiplayer tower defense game developed as part of the *Advanced Object-Oriented Programming* course. The game leverages modern Java technologies to implement real-time gameplay, cooperative networking, and scalable game systems.
 
 ## Overview
@@ -8,7 +13,7 @@ Players collaborate (or compete) to defend against waves of enemies by placing a
 
 ## Technologies Used
 
-* Java 17
+* Java 21
 * JavaFX with Scene Builder (FXML-based UI)
 * FXGL Game Development Framework
 * Java Sockets (LAN multiplayer)
