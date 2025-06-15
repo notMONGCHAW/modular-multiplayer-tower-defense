@@ -6,7 +6,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 
 public class FXMLMainMenu extends FXGLMenu {
-
     public FXMLMainMenu() {
         super(MenuType.MAIN_MENU);
 
@@ -21,12 +20,10 @@ public class FXMLMainMenu extends FXGLMenu {
         }
     }
 
-    // Public method to show the options menu using the protected FXGLMenu method
     public void showOptions() {
-//        fireOptionsMenu();
+        // Implement your own options logic here (FXGL 21.x does not provide fireOptionsMenu!)
     }
 
-    // Public method to exit the game using the protected FXGLMenu method
     public void exitGame() {
         fireExit();
     }
