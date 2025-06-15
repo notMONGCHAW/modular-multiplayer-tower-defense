@@ -1,37 +1,46 @@
 package com.modulartd.ui;
 
+import com.almasb.fxgl.app.scene.FXGLMenu;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.scene.control.Button;
-
-import static com.almasb.fxgl.dsl.FXGLForKtKt.getGameScene;
-import static com.almasb.fxgl.dsl.FXGL.getGameController;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
 public class MainMenuController {
 
     @FXML
-    private Button startButton;
-
+    private Button btnPlay;
     @FXML
-    private Button exitButton;
+    private Button btnOptions;
+    @FXML
+    private Button btnExit;
+
+    private FXGLMenu fxglMenu;
+
+    public void setFXGLMenu(FXGLMenu menu) {
+        this.fxglMenu = menu;
+    }
 
     @FXML
     private void initialize() {
-        startButton.setOnAction(e -> {
-            try {
-                Parent gameRoot = FXMLLoader.load(getClass().getResource("/fxml/GameScreen.fxml"));
-                getGameScene().getContentRoot().getChildren().setAll(gameRoot);
-
-                // Give focus to the game root to receive key events immediately
-                gameRoot.requestFocus();
-            } catch (Exception ex) {
-                ex.printStackTrace();
-            }
+        btnPlay.setOnAction(e -> showPlayModeMenu());
+        btnOptions.setOnAction(e -> {
+            if (fxglMenu instanceof FXMLMainMenu) ((FXMLMainMenu)fxglMenu).showOptions();
         });
-
-        exitButton.setOnAction(e -> {
-            getGameController().exit();
+        btnExit.setOnAction(e -> {
+            if (fxglMenu instanceof FXMLMainMenu) ((FXMLMainMenu)fxglMenu).exitGame();
         });
+    }
+
+    private void showPlayModeMenu() {
+        try {
+            Parent playModeRoot = FXMLLoader.load(getClass().getResource("/fxml/PlaymodeMenu.fxml"));
+            Stage stage = (Stage) btnPlay.getScene().getWindow();
+            stage.setScene(new Scene(playModeRoot, 800, 600));
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
 }
