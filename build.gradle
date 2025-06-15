@@ -19,7 +19,7 @@ dependencies {
     // FXGL Game Engine
     implementation "com.github.almasb:fxgl:$fxglVersion"
 
-    // JavaFX modules
+    // JavaFX modules (no platform classifier needed with the plugin)
     implementation "org.openjfx:javafx-base:$javafxVersion"
     implementation "org.openjfx:javafx-controls:$javafxVersion"
     implementation "org.openjfx:javafx-graphics:$javafxVersion"

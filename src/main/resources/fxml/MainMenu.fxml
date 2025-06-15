@@ -5,12 +5,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.geometry.*?>
 
-<StackPane xmlns:fx="http://javafx.com/fxml/1" fx:id="root" prefWidth="800" prefHeight="600"
+<StackPane xmlns:fx="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+           fx:id="root" prefWidth="800" prefHeight="600"
            style="-fx-background-color: linear-gradient(to bottom, #200010, #2e2e31);"
            fx:controller="com.modulartd.ui.MainMenuController">
    <VBox alignment="CENTER" spacing="24">
       <Text text="Modular Tower Defense" style="-fx-font-size: 42px; -fx-stroke: white; -fx-stroke-width: 2; -fx-fill: transparent;" />
-      <Button fx:id="btnPlay" text="Play" maxWidth="200" style="-fx-font-size: 22px;"/>
+      <Button fx:id="btnPlay" text="Play" maxWidth="200" style="-fx-font-size: 22px;" onAction="#onPlay"/>
       <Button fx:id="btnOptions" text="Options" maxWidth="200" style="-fx-font-size: 18px;"/>
       <Button fx:id="btnExit" text="Exit" maxWidth="200" style="-fx-font-size: 18px;"/>
    </VBox>

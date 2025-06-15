@@ -6,7 +6,7 @@
 
 <StackPane prefHeight="600" prefWidth="800" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.modulartd.ui.GameScreenController">
 
-    <Label alignment="CENTER" text="This is the Game Screen" textAlignment="CENTER" wrapText="true">
+    <Label alignment="CENTER" text="This is the Placeholder Screen" textAlignment="CENTER" wrapText="true">
         <font>
             <Font size="24.0" />
         </font>

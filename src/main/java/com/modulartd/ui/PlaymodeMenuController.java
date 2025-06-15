@@ -1,42 +1,19 @@
 package com.modulartd.ui;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
-import javafx.fxml.FXMLLoader;
 
-/**
- * Controller for PlaymodeMenu.fxml
- */
 public class PlaymodeMenuController {
 
-    @FXML
-    private Button btnSinglePlayer;
-    @FXML
-    private Button btnMultiplayer;
     @FXML
     private Button btnBack;
 
     @FXML
-    private void initialize() {
-        btnSinglePlayer.setOnAction(e -> startSinglePlayer());
-        btnMultiplayer.setOnAction(e -> startMultiplayer());
-        btnBack.setOnAction(e -> showMainMenu());
-    }
-
-    private void startSinglePlayer() {
-        // TODO: Launch your single player game logic here
-        System.out.println("Single Player selected");
-    }
-
-    private void startMultiplayer() {
-        // TODO: Launch your multiplayer game logic here
-        System.out.println("Multiplayer selected");
-    }
-
-    private void showMainMenu() {
+    private void onBack() {
         try {
             Parent mainMenuRoot = FXMLLoader.load(getClass().getResource("/fxml/MainMenu.fxml"));
             Stage stage = (Stage) btnBack.getScene().getWindow();

@@ -5,12 +5,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.geometry.*?>
 
-<StackPane xmlns:fx="http://javafx.com/fxml/1" fx:id="root" prefWidth="800" prefHeight="600"
-           style="-fx-background-color: linear-gradient(to bottom, #2e2e31, #200010);">
+<StackPane xmlns:fx="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:id="root" prefWidth="800" prefHeight="600"
+           style="-fx-background-color: linear-gradient(to bottom, #2e2e31, #200010);"
+           fx:controller="com.modulartd.ui.PlaymodeMenuController">
     <VBox alignment="CENTER" spacing="24">
         <Text text="Select Mode" style="-fx-font-size: 38px; -fx-stroke: white; -fx-stroke-width: 1.5; -fx-fill: transparent;" />
         <Button fx:id="btnSinglePlayer" text="Single Player" maxWidth="220" style="-fx-font-size: 20px;"/>
         <Button fx:id="btnMultiplayer" text="Multiplayer" maxWidth="220" style="-fx-font-size: 20px;"/>
-        <Button fx:id="btnBack" text="Back" maxWidth="150" style="-fx-font-size: 16px;"/>
+        <Button fx:id="btnBack" text="Back" maxWidth="150" style="-fx-font-size: 16px;" onAction="#onBack"/>
     </VBox>
 </StackPane>
