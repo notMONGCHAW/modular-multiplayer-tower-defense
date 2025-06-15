@@ -1,46 +1,45 @@
 package com.modulartd.ui;
 
-import com.almasb.fxgl.app.scene.FXGLMenu;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+/**
+ * Controller for the Main Menu.
+ * Handles user interactions on the main menu screen.
+ */
 public class MainMenuController {
-
+    private Button playButton;
     @FXML
-    private Button btnPlay;
-    @FXML
-    private Button btnOptions;
-    @FXML
-    private Button btnExit;
+    private Button exitButton;
 
-    private FXGLMenu fxglMenu;
+    private Stage primaryStage;
 
-    public void setFXGLMenu(FXGLMenu menu) {
-        this.fxglMenu = menu;
+    // Optional: Allow MainApp to inject the primary stage if needed
+    public void setPrimaryStage(Stage stage) {
+        this.primaryStage = stage;
     }
 
     @FXML
     private void initialize() {
-        btnPlay.setOnAction(e -> showPlayModeMenu());
-        btnOptions.setOnAction(e -> {
-            if (fxglMenu instanceof FXMLMainMenu) ((FXMLMainMenu)fxglMenu).showOptions();
-        });
-        btnExit.setOnAction(e -> {
-            if (fxglMenu instanceof FXMLMainMenu) ((FXMLMainMenu)fxglMenu).exitGame();
-        });
+        // Any additional initialization if needed
     }
 
-    private void showPlayModeMenu() {
-        try {
-            Parent playModeRoot = FXMLLoader.load(getClass().getResource("/fxml/PlaymodeMenu.fxml"));
-            Stage stage = (Stage) btnPlay.getScene().getWindow();
-            stage.setScene(new Scene(playModeRoot, 800, 600));
-        } catch (Exception ex) {
-            ex.printStackTrace();
+    @FXML
+    private void onPlayClicked(ActionEvent event) {
+        // TODO: Implement scene swap to play mode or game screen
+        System.out.println("Play button clicked!");
+    }
+
+    @FXML
+    private void onExitClicked(ActionEvent event) {
+        // Exit the application
+        if (primaryStage != null) {
+            primaryStage.close();
+        } else {
+            // fallback in case stage is not set
+            System.exit(0);
         }
     }
 }
